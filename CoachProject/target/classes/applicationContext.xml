@@ -14,6 +14,45 @@
 <bean name="fortuneService" class="comm.example.bean.DailyFortuneService">
 </bean>
 
+
+
+<bean name="myDetails" class="comm.example.bean.Name">
+<property name="refAddressInterface" ref="addressInterface"/>
+</bean>
+
+<bean name="addressInterface" class="comm.example.bean.Address">
+</bean>
+
+
+
+
+<bean name="thePerson" class="comm.example.project.Person">
+		<property name="address" ref="address"/>
+</bean>
+
+
+<bean name="address" class="comm.example.project.Address">
+</bean>
+
+
+
+
+<!-- 
+
+		<bean name="theCustomer" class="comm.example.bean.Customer">
+		<constructor-arg name="customerName" value="Customer1" />
+		<constructor-arg name="address" ref="address"/>
+	</bean>
+	<bean name="address" class="comm.example.bean.Address">
+		<property name="addressLine1" value="Hyderabad" />
+		<property name="addressLine2" value="INDIA" />
+	</bean>
+
+ -->
+
+
+
+
 </beans>
 
 

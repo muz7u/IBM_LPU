@@ -16,5 +16,7 @@ public class DailyFortuneService implements FortuneService, Formattable {
 		// TODO Auto-generated method stub
 		return "today is yourlucky day.";
 	}
+	
+	
 
 }
