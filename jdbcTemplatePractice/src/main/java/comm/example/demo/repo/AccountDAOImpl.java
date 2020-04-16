@@ -27,7 +27,7 @@ public class AccountDAOImpl implements AccountDAO{
 
 	public Account createAccount(Account account) {
 		// TODO Auto-generated method stub
-		String query="insert into account(accountNumber,accountType,balance) values('"
+		String query="insert into account(accountNumber,accountType,initialBalance) values('"
 				+account.getAccountNumber()+"','"
 				+account.getAccountType()+"',"+account.getInitialBalance()+")";
 		

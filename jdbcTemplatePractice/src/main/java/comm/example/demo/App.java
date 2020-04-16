@@ -19,9 +19,6 @@ import comm.example.demo.service.ToDoServiceImpl;
 
 public class App 
 {
-
-	
-	
 	
 	public static void main( String[] args )
     {
@@ -35,13 +32,13 @@ public class App
 		AccountService service=context.getBean("accountServiceImpl",AccountServiceImpl.class);
 		Account account=context.getBean("account",Account.class);
 		
-		/*
-		 * String str[]=UUID.randomUUID().toString().split("-");
-		 * account.setAccountNumber(str[0]); account.setAccountType("LOAN");
-		 * account.setInitialBalance(1000000);
-		 * 
-		 * account=service.createAccount(account); System.out.println(account);
-		 */
+		
+		  String str[]=UUID.randomUUID().toString().split("-");
+		  account.setAccountNumber(str[0]); account.setAccountType(AccountType.LOAN);
+		  account.setInitialBalance(1000000);
+		  
+		  account=service.createAccount(account); System.out.println(account);
+		 
 		 
 		
 		/*
@@ -58,7 +55,7 @@ public class App
 		 * System.out.println(a); }
 		 */
 		
-		service.deleteById("f53ce40c");
+		//service.deleteById("f53ce40c");
 		
 		
 		 
