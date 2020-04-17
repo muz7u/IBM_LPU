@@ -12,9 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.example.model.Items;
 
-/**
- * Servlet implementation class GroceryManagerServlet
- */
+
 public class GroceryManagerServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
